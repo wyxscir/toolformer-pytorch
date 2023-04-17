@@ -1,3 +1,6 @@
+# 他整个仓库的代码也是很少
+# 这个是他封装包的入口调用程序吧
+
 import re
 
 from functools import partial, wraps

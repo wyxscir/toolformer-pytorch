@@ -4,6 +4,8 @@
 
 Implementation of <a href="https://arxiv.org/abs/2302.04761">Toolformer</a>, Language Models That Can Use Tools, by MetaAI
 
+这个应该不是官方的实现 不知是否包含训练部分 应该是没有的
+
 ## Appreciation
 
 - <a href="https://stability.ai/">Stability.ai</a> for the generous sponsorship to work and open source cutting edge artificial intelligence research
@@ -21,6 +23,8 @@ $ pip install toolformer-pytorch
 ## Usage
 
 Example usage with giving language models awareness of current date and time.
+
+一个调用日历接口的例子，其实调用api没有那么高端，其实在chatGPT之前，用siri的话也能去获取当前天气等，但是chatGPT这种应该是用户还是文本对话的形式，可能说的不是那么准确，语言模型也能明白，或者语言模型本身分析人类需求生成了这种调用API的文本指令，进而调用，返回文本结果。
 
 ```python
 import torch
@@ -46,7 +50,7 @@ Output: Today is the first [Calendar()] Friday of the year.
 Input: The president of the United States is Joe Biden.
 Output: The president of the United States is [Calendar()] Joe Biden.
 Input: [input]
-Output: 
+Output:
 """
 
 data = [
